@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #002B5B;
+    color: white;
+}
+
+.movies_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-content: center;
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    position: absolute;
+}
+
+.movie_card {
+    margin: 1em;
+    padding: 1em;
+}
+
+.movie_img {
+    width: 200px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.movie_img:hover {
+    cursor: pointer;
+}
+
+.vote-green {
+    background-color: green;
+    color: white;
+    padding: 0.3em;
+}
+
+.vote-orange {
+    background-color: rgba(211, 63, 0, 0.965);
+    color: white;
+    padding: 0.3em;
+}
+
+
+/* @media only screen and (max-width: 500px) {
+    .movies_body {
+        grid-template-columns: 1fr;
+    }
+    .movie_img {
+        width: 200px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+} */
+
+@media only screen and (max-width: 450px) and (min-width: 280px) {
+    .movies_body {
+        grid-template-columns: 1fr;
+    }
+    .movie_img {
+        width: 200px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .input-field {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-field>input {
+        /* padding: 0.3em 1em;
+        margin: 0.2em; */
+        font-size: 1em;
+        font-weight: bolder;
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 451px) {
+    .movies_body {
+        grid-template-columns: 1fr 1fr;
+    }
+    .movie_img {
+        width: 200px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .input-field {
+        flex-direction: column;
+        width: 100%;
+    }
+    .input-field>input {
+        /* padding: 0.3em 1em;
+      margin: 0.2em; */
+        font-size: 1em;
+        font-weight: bolder;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 873px) and (min-width: 701px) {
+    .movies_body {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .movie_img {
+        width: 200px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #159895;
+    color: white;
+}
+
+.input-field>input {
+    padding: 0.5em 4em;
+    margin: 1em;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
